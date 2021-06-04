@@ -1,0 +1,20 @@
+.square {
+  align-items: center;
+  border: 3px solid #7E7E7E;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  width: 80px;
+}
+
+.p-letter {
+  font-family: Baskerville;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+
+
+
+/* definitely would have to refactor this */
+

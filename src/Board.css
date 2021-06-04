@@ -1,0 +1,14 @@
+.board {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-left: 32px;
+  width: 320px;
+}
+
+.next-player-message {
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  margin-bottom: 45px;
+  width: 260px;
+}

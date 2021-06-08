@@ -5,11 +5,28 @@ import '../Board.css';
 function Board() {
 
   const [ board, setBoard ] = useState(Array(9).fill(null));
+  const [ player, setPlayer ] = useState('X');
+
+  const handleClick = (index) => {
+    console.log('i', index)
+    let newBoard = board;
+
+    if (board[index] === null) {
+      newBoard[index] = player;
+
+      let newPlayer = player === 'X' ? 'O' : 'X';
+
+      setBoard(newBoard);
+      setPlayer(newPlayer);
+    }
+
+  }
 
   const square = board.map((el, index) => 
     <Square 
     key={index} 
-    value={el}  />
+    value={el}  
+    onClick={() => handleClick(index)}/>
   );
 
   return (

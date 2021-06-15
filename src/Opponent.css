@@ -1,4 +1,8 @@
 .opponent-container {
   background-color: cornsilk;
+}
+
+.choose-player-container {
   display: flex;
+  justify-content: center;
 }

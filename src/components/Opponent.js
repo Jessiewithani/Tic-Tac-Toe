@@ -6,7 +6,10 @@ function Opponent() {
 
   let [player, setPlayer] = useState(null)
   
-  
+  //1. Define a callback in my parent which takes the data I need in as a paramter
+  //2. Pass that callback as a prop to the child
+  //3. Call the callback using this.props.callbackName in the child
+  //4. Pass in the data as an argument
   
   //now we need a useEffect method for handling the click
   const handleClick = (event) => {
